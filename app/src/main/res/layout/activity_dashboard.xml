@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/forgotid"
+        android:layout_width="139dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="Tasks"
+        android:textColor="#0B0A0A"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Log in"
+        android:textColor="#FBF6F6"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/forgotid"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.003"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="139dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="Sign in with google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="117dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <TextView
+        android:id="@+id/emailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Email"
+        android:textColor="#090808"
+        app:layout_constraintBottom_toTopOf="@+id/emailboxedit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotid"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/passwordid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Password"
+        android:textColor="#0B0A0A"
+        app:layout_constraintBottom_toTopOf="@+id/currentpasswordid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotid"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/currentpasswordid"
+        android:layout_width="372dp"
+        android:layout_height="63dp"
+        android:ems="10"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:textColor="#0C0C0C"
+        android:textColorHighlight="#673AB7"
+        android:textColorHint="#030304"
+        android:textColorLink="#0F0F10"
+        android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/holo_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotid"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <EditText
+        android:id="@+id/emailboxedit"
+        android:layout_width="372dp"
+        android:layout_height="63dp"
+        android:ems="10"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:textColor="#090809"
+        android:textColorHighlight="#673AB7"
+        android:textColorHint="#080809"
+        android:textColorLink="#0C0C0E"
+        android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/holo_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotid"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <Button
+        android:id="@+id/sendemailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:text="Log in"
+        android:textColor="#FBF9F9"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentpasswordid"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/forgotpasswordid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password"
+        android:textColor="#0B0A0A"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendemailid"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <TextView
+        android:id="@+id/registerid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register here"
+        android:textColor="#0C0C0C"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendemailid"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <ProgressBar
+        android:id="@+id/progressBarid"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

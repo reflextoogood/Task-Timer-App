@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskCreateActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="174dp"
+        android:layout_height="39dp"
+        android:text="What is to be done?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <EditText
+        android:id="@+id/taskenterid"
+        android:layout_width="330dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:ems="10"
+        android:hint="Enter Task Here"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textColorHighlight="#673AB7"
+        android:textColorHint="#030304"
+        android:textColorLink="#0F0F10"
+        android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <EditText
+        android:id="@+id/dateenterid"
+        android:layout_width="330dp"
+        android:layout_height="51dp"
+
+        android:backgroundTint="@android:color/holo_purple"
+        android:ems="10"
+        android:hint="Date not set"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textColorHighlight="#673AB7"
+        android:textColorHint="#030304"
+        android:textColorLink="#0F0F10"
+        android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <EditText
+        android:id="@+id/timeenterid"
+        android:layout_width="330dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:ems="10"
+        android:hint="Time not set"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textColorHighlight="#673AB7"
+        android:textColorHint="#030304"
+        android:textColorLink="#0F0F10"
+        android:textCursorDrawable="@drawable/my_custom_cursor_drawable"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936"
+        app:srcCompat="@drawable/ic_baseline_done_24" />
+
+    <ImageButton
+        android:id="@+id/calendarid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354"
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardNameid"
+    android:layout_width="350dp"
+    android:layout_height="170dp"
+    android:layout_marginBottom="15dp"
+    android:translationX="30dp"
+    android:translationY="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:cardMaxElevation="10dp"
+    app:contentPadding="0dp"
+    app:contentPaddingBottom="0dp"
+    app:contentPaddingTop="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFE194"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleviewid"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#070707"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="106dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Due Date"
+                    android:textColor="#090808"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/dateviewid"
+                    android:layout_width="122dp"
+                    android:layout_height="44dp"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="#0C0C0C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/timeviewid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="#050505"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
